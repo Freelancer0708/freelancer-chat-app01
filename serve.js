@@ -23,6 +23,6 @@ io.on("connection", (socket)=>{
 /**
  * 3000番でサーバを起動する
  */
-// http.listen(freelancer-chat-app01.herokuapp.com, ()=>{
-//   console.log("listening on *:freelancer-chat-app01.herokuapp.com");
-// });
+ http.listen(3000, ()=>{
+  console.log("listening on *:3000");
+});
