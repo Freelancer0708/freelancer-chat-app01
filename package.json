@@ -8,14 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/katsube/socketio-chat.git"
+    "url": "https://freelancer-chat-app01.herokuapp.com/"
   },
-  "author": "Makito Katsube <katsubemakito@gmail.com> (http://github.com/katsube)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/katsube/socketio-chat/issues"
-  },
-  "homepage": "https://github.com/katsube/socketio-chat#readme",
+  "author": " <freelancernoaccont@gmail.com> (https://freelancer-chat-app01.herokuapp.com/)",
+  "homepage": "https://freelancer-chat-app01.herokuapp.com/",
   "dependencies": {
     "express": "^4.18.1",
     "socket.io": "^2.5.0"
