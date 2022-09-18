@@ -26,6 +26,10 @@ h1 {
     width: 50%;
     margin-left: 3%;
     margin-right: 3%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 4%;
+    background-color: #fff;
 }
 .chat-btm {
     position: fixed;
