@@ -62,15 +62,7 @@
     const list = document.querySelector("#msglist");
     const li = document.createElement("li");
     li.innerHTML = `${msg.text}`;
-    console.log(li);
-    const count = 0;
-    if(count == 0 ) {
-      list.insertBefore(li, list.firstChild);
-      count++;
-    } else {
-      list.insertAfter(li, list.firstChild);
-    }
-
+    list.insertBefore(li, list.firstChild);
   });
 
   /**

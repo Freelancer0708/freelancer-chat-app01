@@ -18,6 +18,9 @@ h1 {
     height: calc(100vh - 268px);
     background-color: #F2F2F2;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
 }
 #msglist li {
     font-size: 18px;
