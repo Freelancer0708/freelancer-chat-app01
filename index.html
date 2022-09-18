@@ -62,7 +62,7 @@
     const list = document.querySelector("#msglist");
     const li = document.createElement("li");
     li.innerHTML = `${msg.text}`;
-    list.insertBefore(li, list.lastChild);
+    list.insertBefore(li, list.firstChild);
   });
 
   /**
