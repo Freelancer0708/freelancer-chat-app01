@@ -2,17 +2,11 @@
     margin: 0;
     padding: 0;
 }
-/* support iOS */
-html{
-    height: -webkit-fill-available;
-  }
-  body{
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-  }
+
 main {
     background-color: powderblue;
-    height: 100%;
+    overflow: hidden;
+    /* height: 100%; */
     /* padding-bottom: 160px; */
 }
 h1 {
