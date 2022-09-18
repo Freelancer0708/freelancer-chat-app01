@@ -87,6 +87,9 @@ button {
         height: 60%;
     }
     #msglist li {
-        font-size: 4.6vw;
+        font-size: 3.6vw;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px 5%;
     }
 }
