@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer0708のチャット</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <main>
+
+    <h1>Freelancer0708のチャット</h1>
+
+<!-- STEP1. 接続中 -->
+<section id="nowconnecting">
+  ...サーバに接続中
+</section>
+<!-- /接続中 -->
+
+<!-- STEP2. 名前を入力 -->
+<section id="inputmyname">
+  <p>あなたの名前を入力してください</p>
+  <form id="frm-myname">
+    <input type="text" id="txt-myname">
+    <button>入室</button>
+  </form>
+</section>
+<!-- /名前を入力 -->
+
+<section id="chat">
+    <!-- 発言ログ -->
+    <ul id="msglist"></ul>
+
+    <!-- 発言フォーム -->
+        
+    <div class="chat-btm">
+      <form id="frm-post">
+        <div class="chat-vertical">
+          <span id="myname"></span>
+          <textarea type="text" id="msg" cols="5" rows="5"></textarea>
+        </div>
+
+        <button>送信</button>
+      </form>
+    </div>
+</section>
+
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+<script src="util.js"></script>
+<script src="app.js"></script>
+
+
+
+
+</body>
+</html>
