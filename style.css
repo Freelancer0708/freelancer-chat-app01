@@ -78,6 +78,7 @@ button {
     main {
         /* padding-bottom: 33vw; */
         height: 100vh;
+        padding-bottom: 0;
     }
     #msg {
         font-size: 4.6vw;
