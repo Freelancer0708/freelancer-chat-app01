@@ -72,14 +72,18 @@ button {
 }
 
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
     main {
-        padding-bottom: 33vw;
+        /* padding-bottom: 33vw; */
+        height: 100vh;
     }
     #msg {
         font-size: 4.6vw;
     }
     #msglist {
-        height: calc(100vh - 49vw);
+        height: 60%;
     }
     #msglist li {
         font-size: 4.6vw;
