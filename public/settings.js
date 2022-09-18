@@ -6,6 +6,6 @@ console.log(height);
 main.style.height = height + "px";
 
 if(window.innerWidth <= 768) {
-    msglistheight = height - 240;
+    msglistheight = height - 250;
     msglist.style.height = msglistheight + "px";
 }

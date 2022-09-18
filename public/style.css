@@ -129,6 +129,9 @@ button {
     h1 {
         font-size: 20px;
     }
+    html {
+        overflow: hidden;
+    }
     main {
         /* padding-bottom: 33vw; */
         /* height: 100vh; */
