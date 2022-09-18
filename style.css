@@ -4,22 +4,28 @@
 }
 main {
     background-color: powderblue;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 152px;
 }
 h1 {
-    margin-bottom: 20px;
-    padding: 5%;
+    /* margin-bottom: 20px; */
+    padding: 20px 5%;
 }
 #msglist {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 160px;
+    height: calc(100vh - 260px);
+    background-color: #F2F2F2;
+    overflow-y: scroll;
 }
 #msglist li {
     font-size: 18px;
     list-style: none;
     word-break: break-all;
+    width: 50%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .chat-btm {
     position: fixed;
