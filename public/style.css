@@ -125,7 +125,7 @@ button {
 
 @media screen and (max-width: 768px) {
     h1 {
-        font-size: 5vw;
+        font-size: 20px;
     }
     main {
         /* padding-bottom: 33vw; */
@@ -133,15 +133,27 @@ button {
         padding-bottom: 0;
     }
     #msg {
-        font-size: 4.6vw;
+        font-size: 16px;
+    }
+    #myname {
+        font-size: 16px;
     }
     #msglist {
-        height: 60%;
+        height: calc(100vh - 240px);
     }
     #msglist li {
-        font-size: 3.6vw;
+        font-size: 16px;
         margin-left: 5%;
         margin-right: 5%;
         padding: 20px 5%;
+    }
+    #msglist li .name {
+        font-size: 16px;
+    }
+    #msglist li .text {
+        font-size: 16px;
+    }
+    .chat-vertical {
+        margin-right: 2%;
     }
 }
