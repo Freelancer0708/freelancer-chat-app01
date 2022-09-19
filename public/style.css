@@ -175,6 +175,7 @@ li {
     }
     #msg {
         font-size: 16px;
+        height: 60px;
     }
     #myname {
         font-size: 16px;
@@ -196,5 +197,12 @@ li {
     }
     .chat-vertical {
         margin-right: 2%;
+    }
+    #frm-post {
+        padding: 10px 5%;
+        align-items: flex-end;
+    }
+    #frm-post button {
+
     }
 }
