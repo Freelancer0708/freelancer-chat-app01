@@ -28,10 +28,19 @@
 </section>
 <!-- /名前を入力 -->
 
-<section id="chat">
+<article id="chat">
     <!-- 発言ログ -->
-    <ul id="msglist"></ul>
+    <section id="chat-main">
+      <ul id="msglist">
+        <div id="login-log"></div>
+      </ul>
+      <ul id="memberlist"></ul>
+    </section>
 
+<!-- ログアウト -->
+    <form id="frm-quit">
+      <button>退室する</button>
+    </form>
     <!-- 発言フォーム -->
         
     <div class="chat-btm">
@@ -44,7 +53,7 @@
         <button>送信</button>
       </form>
     </div>
-</section>
+</article>
 
   </main>
 

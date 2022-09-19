@@ -11,7 +11,7 @@ main {
 }
 h1 {
     /* margin-bottom: 20px; */
-    padding: 20px 5%;
+    padding: 20px 5% 40px;
 }
 #msglist {
     width: 90%;
@@ -23,6 +23,7 @@ h1 {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-start;
+    position: relative;
 }
 #msglist li {
     font-size: 18px;
@@ -123,6 +124,41 @@ button {
     height: 50px;
     margin-left: auto;
     display: block;
+
+}
+#login-log {
+    width: 100%;
+}
+#login-log p {
+    border-radius: 10px;
+    background-color: #d2d2d2;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    padding: 10px 5%;
+    text-align: center;
+    font-size: 14px;
+}
+
+li {
+    list-style: none;
+}
+#memberlist {
+    display: flex;
+    position: fixed;
+    top: 55px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+#frm-quit {
+    position: fixed;
+    top: 8px;
+    right: 2%;
+
 }
 
 @media screen and (max-width: 768px) {
