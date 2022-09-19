@@ -17,7 +17,7 @@ h1 {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    height: calc(100vh - 268px);
+    height: calc(100vh - 300px);
     background-color: #F2F2F2;
     overflow-y: scroll;
     display: flex;
@@ -42,6 +42,26 @@ h1 {
 }
 #msglist li.member {
     background-color: #fffff5;
+}
+#msglist li.master {
+    width: 80%;
+    background-color: #d5d5d5;
+    border-radius: 10px;
+    align-self: center;
+}
+#msglist li .name {
+    font-size: 14px;
+}
+#msglist li .text {
+    font-size: 16px;
+}
+#msglist li.master .text {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+.msg-master {
+    text-align: center;
 }
 #msglist li:last-of-type {
     margin-top: 20px;
@@ -148,10 +168,21 @@ li {
 #memberlist {
     display: flex;
     position: fixed;
-    top: 55px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
+    justify-content: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#memberlist li {
+    margin-right: 10px;
+}
+
+#memberlist li span {
+    font-size: 12px;
 }
 
 #frm-quit {
@@ -160,6 +191,7 @@ li {
     right: 2%;
 
 }
+
 
 @media screen and (max-width: 768px) {
     h1 {
@@ -186,13 +218,14 @@ li {
     }
     #msglist li {
         font-size: 16px;
-        margin-left: 5%;
-        margin-right: 5%;
-        padding: 20px 5%;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 20px 3%;
     }
-    #msglist li .name {
-        font-size: 16px;
+    #msglist li.master {
+        width: 84%;
     }
+
     #msglist li .text {
         font-size: 16px;
     }
@@ -205,5 +238,9 @@ li {
     }
     #frm-post button {
 
+    }
+
+    #memberlist {
+        top: 45px;
     }
 }

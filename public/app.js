@@ -66,8 +66,8 @@ const MEMBER = {
   $("#frm-myname button").setAttribute("disabled", "disabled");
 
     // 表示を切り替える
-    $("#inputmyname").style.display = "none";   // 名前入力を非表示
-    $("#chat").style.display = "block";         // チャットを表示
+    // $("#inputmyname").style.display = "none";   
+    // $("#chat").style.display = "block";         
 
 
   });
@@ -252,25 +252,19 @@ function gotoSTEP1(){
   function addMessage(msg, is_me=false){
     const list = $("#msglist");
     const li = document.createElement("li");
+    const name = MEMBER[msg.token];
 
     // マスターの発言
   if( msg.token === 0 ){
     li.className = "master"
     li.innerHTML = `<div class="msg-master msg-inner"><p class="text">${msg.text}</p></div>`;
   }
-
-
-  
     //------------------------
     // 自分の発言
     //------------------------
     else if( is_me ){
       li.className = "me"
-      if(msg.name == null) {
-        li.innerHTML = `<div class="msg-me msg-inner"><p class="text">${msg.text}</p></div>`;
-      } else {
-        li.innerHTML = `<div class="msg-me msg-inner"><p class="name">@${msg.name}</p><p class="text">${msg.text}</p></div>`;
-      }
+      li.innerHTML = `<div class="msg-me msg-inner"><p class="name">@${name}</p><p class="text">${msg.text}</p></div>`;
 
       container.scrollTop = container.scrollHeight;
     }
@@ -279,11 +273,7 @@ function gotoSTEP1(){
     //------------------------
     else{
       li.className = "member"
-      if(msg.name == null) {
-        li.innerHTML = `<div class="msg-member msg-inner"><p class="text">${msg.text}</p></div>`;
-      } else {
-        li.innerHTML = `<div class="msg-member msg-inner"><p class="name">@${msg.name}</p><p class="text">${msg.text}</p></div>`;
-      }
+      li.innerHTML = `<div class="msg-member msg-inner"><p class="name">@${name}</p><p class="text">${msg.text}</p></div>`;
     }
   
     // リストの最初に追加
