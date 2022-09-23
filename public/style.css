@@ -6,7 +6,7 @@
 main {
     background-color: powderblue;
     overflow: hidden;
-    /* height: 100%; */
+    height: 100vh;
     /* padding-bottom: 160px; */
 }
 h1 {
@@ -146,10 +146,10 @@ button {
     display: block;
 
 }
-#login-log {
+#new-chat {
     width: 100%;
 }
-#login-log p {
+#new-chat p {
     border-radius: 10px;
     background-color: #d2d2d2;
     margin-bottom: 20px;
@@ -204,6 +204,7 @@ li {
         /* padding-bottom: 33vw; */
         /* height: 100vh; */
         padding-bottom: 0;
+        height: auto;
     }
     #msg {
         font-size: 16px;
@@ -220,7 +221,7 @@ li {
         font-size: 16px;
         margin-left: 3%;
         margin-right: 3%;
-        padding: 20px 3%;
+        padding: 10px 3%;
     }
     #msglist li.master {
         width: 84%;

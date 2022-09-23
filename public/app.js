@@ -333,3 +333,4 @@ function addMessageFromMaster(msg){
     // 内部変数から削除
     delete MEMBER[token];
   }
+  
